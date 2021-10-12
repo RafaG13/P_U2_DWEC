@@ -6,7 +6,15 @@ window.onload = function(){
 	let	verde =  Math.floor(Math.random()*255);
 	let	azul =  Math.floor(Math.random()*255);
 		
-	let cadenaColor = `* {background-color:rgb(${rojo},${verde},${azul});}`;
+	let cadenaColor = `* {background-color:rgb(${rojo},${verde},${azul});} table {
+					border:2px solid black;
+					margin:auto;
+					font-size:1.5rem;
+				}
+				th, td {
+					padding:1.3rem;
+					background-color:white;
+				}`;
 	cabecera.innerHTML = cadenaColor;
 
 	let porcentajeRojo = ((rojo/255)*100).toFixed(2);
